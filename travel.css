@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding:0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.homelogo{
+    width: 80px;
+    border-radius: 5px;
+
+}
+.homeli{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+  .homea{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  .content{
+    text-align: center;
+  }
+.content h1{
+    
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{-webkit-text-stroke:2px 
+    #fff;
+    color: transparent;
+
+}
+.homeanchor{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.back-video{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    .backvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .backvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+#about{
+    height: 100vh;
+}
+.abouth{
+    font-weight: 600;
+    margin-top: 80px;
+}
+.aboutc{
+    width: 100%;
+    height: 0.5rem;
+    background-color:rgb(13, 110, 253);
+}
+
+.placeh{
+    text-align: center;
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease
+}
+   .inner:hover img{
+    transform: scale(1.5);
+   }
+.aboutname{
+    padding-top: 50px;
+}
+.aboutnig{
+    color:rgb(13, 110, 253);
+    /* 13, 110, 253 */
+}
+.aboutpar{
+    margin-top: 20px;
+    font-weight: 400;
+}
+.detailma{
+height: 600px;
+
+background-image: url(./phtos/form.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.detailh{
+font-size: 55px;
+   text-align: center;
+color: #fff;
+}
+.booking-form-box{
+    max-width:350px;
+border:1px solid #ced4da;
+margin-left: 580px;
+margin-top: 30px;
+
+
+}
+
+.booking-form{
+    padding: 0 20px 20px;
+}
+.booking-form label{
+    margin-bottom:5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+.input::placeholder{
+    color: #fff !important;
+
+}
+.input-grp{
+    width: 151px;
+    display: inline-block;
+}
+/* footer */
+
+
+/* reveiw */
+
+.review{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color:rgb(13, 110, 253);
+    font-family: mv boli;
+    /* 0, 0, 255 */
+}
+
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+
+.review .review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+}
+
+.review .review_box .review_card{
+    width: 350px;
+    height: px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 60%;
+    border: 5px solid grey;
+}
+
+.review .review_box .review_card .review_text{
+    text-align: center;
+}
+
+.review .review_box .review_card .review_text .name{
+    color: #000;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .name{
+    transform: translateY(-50px);
+}
+
+.review .review_box .review_card .review_text .review_icon{
+    color:1;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_icon{
+    transform: translateY(-30px);
+}
+
+.review .review_box .review_card .review_text .review_social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    line-height: 22px;
+}
+
+.review .review_box .review_card:hover .review_text p{
+    margin-top: 5px;
+}
+footer{
+    width: 100%;
+    padding: 30px 0 0 20px;
+    
+}
+/* 66, 103, and 178. */
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2{
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color:white;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color:white;
+}
+
+footer .end span{
+    color:white;
+    margin-left: 10px;
+}
+.footer_tag{
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
